@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SnowSplit</string>
+
+    <!-- Navigation Tabs -->
+    <string name="nav_entries">Entries</string>
+    <string name="nav_bubbles">Bubbles</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Bubbles Tab (Main Hub) -->
+    <string name="bubbles_me_label">Me</string>
+    <string name="bubbles_mode_net">Net</string>
+    <string name="bubbles_mode_gross">Gross</string>
+    <string name="bubbles_summary_balanced">All settled</string>
+    <string name="bubbles_summary_owed_to_you">Owed to you: %1$s</string>
+    <string name="bubbles_summary_you_owe">You owe: %1$s</string>
+    <string name="bubbles_add_person_cta">Person</string>
+    <string name="bubbles_add_entry_cta">Entry</string>
+    <string name="bubbles_empty_title">No people on your map yet</string>
+    <string name="bubbles_empty_subtitle">Tap + Person or + Entry above to place your first floating friend bubble.</string>
+    <string name="bubbles_tap_me_hint">Tap "Me" to customize profile</string>
+    <string name="bubbles_action_i_paid">I paid</string>
+    <string name="bubbles_action_they_paid">Paid me</string>
+    <string name="bubbles_action_new_debt">New debt</string>
+    <string name="bubbles_settle_all_chip">Settle full (%1$s)</string>
+    <string name="bubbles_settle_all_both_chip">Settle all</string>
+    <string name="bubbles_view_entries_cta">Entries</string>
+    <string name="bubbles_edit_profile_cta">Profile</string>
+    <string name="bubbles_status_owes_you">Owes you %1$s</string>
+    <string name="bubbles_status_you_owe">You owe %1$s</string>
+    <string name="bubbles_status_gross_pair">+%1$s owed to you · -%2$s you owe</string>
+    <string name="person_dialog_new_title">New person</string>
+    <string name="person_dialog_edit_title">Edit person</string>
+    <string name="person_dialog_name_label">Name</string>
+    <string name="person_dialog_name_error">Enter a name</string>
+    <string name="person_dialog_avatar_label">Avatar (Icon or Photo)</string>
+    <string name="person_dialog_delete_cta">Delete</string>
+    <string name="person_dialog_delete_confirm_title">Delete %1$s?</string>
+    <string name="person_dialog_delete_confirm_body">This removes %1$s and %2$d linked entries from your ledger.</string>
+    <string name="person_dialog_delete_confirm_empty_body">Remove %1$s from your bubble map?</string>
+    <string name="action_close">Close</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_back">Back</string>
+
+    <!-- Entries Tab -->
+    <string name="entries_title">Entries</string>
+    <string name="entries_add_cta">Add entry</string>
+    <string name="entries_filter_all">All</string>
+    <string name="entries_filter_owed_to_me">Owed to me</string>
+    <string name="entries_filter_i_owe">I owe</string>
+    <string name="entries_filter_person_all">All people</string>
+    <string name="entries_empty_title">No entries yet</string>
+    <string name="entries_empty_subtitle">Add your first friend or debt entry using the + button below.</string>
+    <string name="entries_filtered_empty_title">No matching entries</string>
+    <string name="entries_filtered_empty_subtitle">Try switching the filter or adding a new entry.</string>
+    <string name="entries_dir_they_owe_me">Owes you</string>
+    <string name="entries_dir_i_owe_them">You owe</string>
+    <string name="entries_dir_they_paid_me">Paid you</string>
+    <string name="entries_dir_i_paid_them">You paid</string>
+    <string name="entries_action_edit">Edit</string>
+    <string name="entries_action_settle">Settle</string>
+    <string name="entries_action_delete">Delete</string>
+    <string name="entries_undo">Undo</string>
+    <string name="entries_deleted_msg">Entry deleted</string>
+    <string name="entries_settled_msg">Settled %1$s</string>
+    <string name="entries_settled_note_prefix">Settled: %1$s</string>
+    <string name="entries_settled_note_default">Quick settle</string>
+
+    <!-- Entry & Person Editor Dialog -->
+    <string name="entry_dialog_new_title">New entry</string>
+    <string name="entry_dialog_edit_title">Edit entry</string>
+    <string name="entry_dialog_person_label">Person</string>
+    <string name="entry_dialog_new_person_chip">+ New person</string>
+    <string name="entry_dialog_new_person_name">Person name</string>
+    <string name="entry_dialog_kind_debt">New debt</string>
+    <string name="entry_dialog_kind_payment">Repayment</string>
+    <string name="entry_dialog_debt_they_owe_me">%1$s owes me</string>
+    <string name="entry_dialog_debt_i_owe_them">I owe %1$s</string>
+    <string name="entry_dialog_pay_they_paid_me">%1$s paid me</string>
+    <string name="entry_dialog_pay_i_paid_them">I paid %1$s</string>
+    <string name="entry_dialog_person_fallback">Person</string>
+    <string name="entry_dialog_amount_label">Amount (%1$s)</string>
+    <string name="entry_dialog_amount_error">Enter a valid amount above 0</string>
+    <string name="entry_dialog_person_error">Select or enter a person</string>
+    <string name="entry_dialog_note_label">Reason / Note (optional)</string>
+    <string name="entry_dialog_date_label">Date</string>
+    <string name="entry_dialog_pick_photo">Gallery photo</string>
+    <string name="entry_dialog_use_icon">Use icon</string>
+    <string name="entry_dialog_avatar_error">Could not load selected photo</string>
+
+    <!-- Account Tab -->
+    <string name="account_title">Account &amp; Sync</string>
+    <string name="account_coming_soon_badge">Coming soon</string>
+    <string name="account_coming_soon_title">Offline-first today, cloud sync later</string>
+    <string name="account_coming_soon_body">SnowSplit works completely without an account. Optional encrypted sync across friends and devices is prepared behind modular Auth &amp; Sync repositories.</string>
+    <string name="account_row_subtitle">Offline-first · Coming soon</string>
+    <string name="account_status_local_only">Local-only</string>
+    <string name="account_pillar_storage_title">Offline Room storage</string>
+    <string name="account_pillar_storage_desc">All bubbles, photos, and debt entries remain stored locally on your device.</string>
+    <string name="account_pillar_sync_title">Sync status</string>
+    <string name="account_pillar_sync_never">Not connected · Planned via AuthRepository &amp; SyncRepository</string>
+    <string name="account_pillar_sync_last">Last synced: %1$s</string>
+
+    <!-- Settings Screen Sections & Rows -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_account">Account</string>
+    <string name="settings_header_splits_profile">Splits &amp; Profile</string>
+    <string name="settings_header_appearance">Appearance</string>
+    <string name="settings_header_experimental">Experimental</string>
+    <string name="settings_experimental_badge">Experimental</string>
+    <string name="settings_experimental_subtitle">Preview &amp; lab features — still in testing</string>
+    <string name="settings_header_help_info">Help &amp; Info</string>
+
+    <string name="settings_help_title">Help &amp; Tips</string>
+    <string name="settings_help_subtitle">Bubbles, Net vs. Gross, settling &amp; offline storage</string>
+    <string name="settings_help_body">• Bubbles Map: Drag bubbles gently or tap a person to log debts, payments, or settle balances.\n• Net vs. Gross: Net offsets mutual debts automatically; Gross keeps credits and debts separate.\n• Offline-first: All contacts, photos, and entries stay locally on your device.</string>
+    <string name="settings_about_title">App version</string>
+    <string name="settings_about_subtitle">SnowSplit v%1$s (%2$d)</string>
+    <string name="settings_about_body">SnowSplit %1$s\n\nAll debts, contacts, and custom backgrounds are stored locally on your device without any tracking or mandatory account. Optional theme sync with SnowDo\'s uses Android signature-level permissions only.</string>
+
+    <string name="settings_section_calculation">Debt Calculation</string>
+    <string name="settings_calc_net">Net (Offset)</string>
+    <string name="settings_calc_gross">Gross (Separate)</string>
+    <string name="settings_calc_net_desc">Offsets credits and debts per person automatically (e.g. 20 € credit + 60 € debt = You owe 40 €).</string>
+    <string name="settings_calc_gross_desc">Shows green credits and red debts side by side until each side is settled separately.</string>
+
+    <string name="settings_section_currency">Currency</string>
+    <string name="settings_currency_auto">Default (Auto)</string>
+    <string name="settings_currency_auto_status">Default (Auto · %1$s)</string>
+    <string name="settings_currency_eur">Euro (€)</string>
+    <string name="settings_currency_usd">US Dollar ($)</string>
+    <string name="settings_currency_gbp">British Pound (£)</string>
+    <string name="settings_currency_auto_hint">Active region resolves to %1$s</string>
+
+    <string name="settings_my_profile_title">My Profile ("Me" Bubble)</string>
+    <string name="settings_my_profile_status">Name: %1$s</string>
+    <string name="settings_my_profile_name_label">Display name</string>
+    <string name="settings_my_profile_icon_label">Bubble icon or gallery photo</string>
+
+    <string name="settings_section_appearance">Theme &amp; Design</string>
+    <string name="settings_appearance_custom_status">Custom (%1$s)</string>
+    <string name="settings_theme_mode_preset">Presets</string>
+    <string name="settings_theme_mode_custom">Custom</string>
+    <string name="settings_sync_app_icon">Match app icon to theme</string>
+    <string name="settings_sync_app_icon_on">SnowSplit icon matches your active theme preset</string>
+    <string name="settings_sync_app_icon_off">Using default SnowSplit launcher icon</string>
+    <string name="settings_cross_app_sync">Sync theme &amp; icon with SnowDo\'s</string>
+    <string name="settings_cross_app_sync_on">Connected: Themes, backgrounds &amp; icons stay synced</string>
+    <string name="settings_cross_app_sync_off">Paused: Design changes apply to SnowSplit only</string>
+    <string name="settings_cross_app_sync_unavailable">SnowDo\'s not installed or incompatible</string>
+    <string name="settings_reduce_live_blur">Reduce live blur (Battery saver)</string>
+    <string name="settings_reduce_live_blur_on">Uses fast translucent cards without live GPU blur</string>
+    <string name="settings_reduce_live_blur_off">Full frosted-glass live blur active</string>
+
+    <string name="settings_tab_transition_label">Tab transitions</string>
+    <string name="settings_tab_transition_dialog_title">Tab transition style</string>
+    <string name="settings_tab_transition_animated">Animated</string>
+    <string name="settings_tab_transition_animated_status">Animated (Default)</string>
+    <string name="settings_tab_transition_animated_desc">Default: smooth slide &amp; pill</string>
+    <string name="settings_tab_transition_instant">Instant</string>
+    <string name="settings_tab_transition_instant_status">Instant (No animation)</string>
+    <string name="settings_tab_transition_instant_desc">Switch immediately without animation</string>
+
+    <string name="settings_account_tab_row">Account tab in nav bar</string>
+    <string name="settings_account_auto">Automatic</string>
+    <string name="settings_account_auto_desc">Show in nav bar on large displays, compact 3-tab bar on narrower screens</string>
+    <string name="settings_account_always">Always show</string>
+    <string name="settings_account_always_desc">Keep all 4 tabs in the bottom navigation bar</string>
+    <string name="settings_account_in_settings">Move to Settings</string>
+    <string name="settings_account_in_settings_desc">Compact 3-tab bar with Account card in Settings</string>
+
+    <string name="settings_language_label">Language</string>
+    <string name="settings_language_dialog_title">Choose language</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_de_status">🇩🇪 Deutsch</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_en_status">🇬🇧 English</string>
+
+    <!-- Appearance Settings Subpage -->
+    <string name="appearance_accent_color">Accent color</string>
+    <string name="appearance_gaming_led_title">Gaming LED color</string>
+    <string name="appearance_gaming_led_desc">Pick any neon accent for borders, sliders, and HUD highlights.</string>
+    <string name="appearance_8bit_variant_title">8-Bit pastel style</string>
+    <string name="appearance_8bit_pink">Pastel Pink</string>
+    <string name="appearance_8bit_blue">Pastel Blue</string>
+    <string name="appearance_8bit_pink_short">Pink</string>
+    <string name="appearance_8bit_blue_short">Blue</string>
+    <string name="appearance_glass_opacity">Glass opacity</string>
+    <string name="appearance_glass_opacity_desc">Adjust how frosted and translucent cards and dialogs appear.</string>
+    <string name="appearance_bg_title">Custom background</string>
+    <string name="appearance_bg_active_desc">Your selected gallery image is active behind the frosted glass.</string>
+    <string name="appearance_bg_default_desc">Pick an image from your gallery for a personalized backdrop.</string>
+    <string name="appearance_bg_preview_cd">Selected background preview</string>
+    <string name="appearance_bg_pick_cta">Choose gallery image</string>
+    <string name="appearance_bg_importing">Importing image…</string>
+    <string name="appearance_bg_reset_cta">Reset to theme background</string>
+    <string name="appearance_bg_applied">Custom background applied.</string>
+    <string name="appearance_bg_failed">Could not load selected image.</string>
+    <string name="appearance_bg_reset_msg">Theme background restored.</string>
+    <string name="appearance_active_cd">Active theme</string>
+    <string name="appearance_auto_seasonal_title">Adaptive seasonal theme</string>
+    <string name="appearance_auto_seasonal_desc">Automatically follows Spring, Summer, Autumn, Winter, Easter, Halloween, Christmas &amp; New Year.</string>
+    <string name="appearance_auto_seasonal_active_fmt">Currently active: %1$s</string>
+    <string name="appearance_bubbles_battery_hint">Note: Interactive animations may consume slightly more performance/battery.</string>
+    <string name="appearance_weather_style_title">Weather &amp; sky style</string>
+    <string name="appearance_weather_cute_2d">Cute 2D</string>
+    <string name="appearance_weather_realistic">Realistic</string>
+    <string name="appearance_weather_location_granted">Live weather updates automatically with coarse location (30 min cache).</string>
+    <string name="appearance_weather_location_fallback">No location permission: using time-of-day sky (06:30–19:30 day/night).</string>
+    <string name="appearance_weather_refresh">Refresh weather</string>
+    <string name="appearance_weather_grant_location">Enable live weather</string>
+    <string name="appearance_category_all">All</string>
+    <string name="appearance_category_normal">Normal</string>
+    <string name="appearance_category_events">Events</string>
+    <string name="appearance_category_playful">Playful</string>
+    <string name="appearance_category_interactive">Interactive</string>
+
+    <!-- Color Picker & Presets -->
+    <string name="color_picker_brightness">Brightness</string>
+    <string name="color_picker_hex_label">Hex Color</string>
+    <string name="color_picker_hex_placeholder">#00E5FF</string>
+    <string name="color_picker_hex_hint">Enter 6-digit hex (e.g. #00E5FF)</string>
+
+    <string name="preset_standard_m3_title">Normal</string>
+    <string name="preset_standard_m3_subtitle">Clean &amp; focused</string>
+    <string name="preset_winter_title">Winter</string>
+    <string name="preset_winter_subtitle">Snowflakes &amp; frost</string>
+    <string name="preset_halloween_title">Halloween</string>
+    <string name="preset_halloween_subtitle">Pumpkins &amp; midnight</string>
+    <string name="preset_christmas_title">Christmas</string>
+    <string name="preset_christmas_subtitle">Festive pine &amp; holly</string>
+    <string name="preset_summer_title">Summer</string>
+    <string name="preset_summer_subtitle">Beach &amp; ocean breeze</string>
+    <string name="preset_autumn_title">Autumn</string>
+    <string name="preset_autumn_subtitle">Warm leaves &amp; amber</string>
+    <string name="preset_spring_title">Spring</string>
+    <string name="preset_spring_subtitle">Fresh meadow &amp; blooms</string>
+    <string name="preset_easter_title">Easter</string>
+    <string name="preset_easter_subtitle">Soft pastel &amp; eggs</string>
+    <string name="preset_new_year_title">New Year</string>
+    <string name="preset_new_year_subtitle">Midnight &amp; fireworks</string>
+    <string name="preset_gaming_title">Gaming</string>
+    <string name="preset_gaming_subtitle">Dark LED &amp; controllers</string>
+    <string name="preset_8bit_cute_title">8-Bit Cute</string>
+    <string name="preset_8bit_cute_subtitle">Retro pixels &amp; paws</string>
+    <string name="preset_interactive_bubbles_title">Interactive Bubbles</string>
+    <string name="preset_interactive_bubbles_subtitle">Floating touch-reactive orbs</string>
+    <string name="preset_mini_city_title">Cutesy Mini-City</string>
+    <string name="preset_mini_city_subtitle">Slanted roads &amp; tiny cars</string>
+    <string name="preset_weather_time_title">Weather &amp; Sky</string>
+    <string name="preset_weather_time_subtitle">Live sun, moon &amp; weather</string>
+    <string name="preset_8bit_cat_title">8-Bit Cat</string>
+    <string name="preset_8bit_cat_subtitle">Pastel pink pixels &amp; paws</string>
+    <string name="preset_8bit_fox_title">8-Bit White Fox</string>
+    <string name="preset_8bit_fox_subtitle">Snowy white &amp; icy fox</string>
+    <string name="preset_8bit_bunny_title">8-Bit Bunny</string>
+    <string name="preset_8bit_bunny_subtitle">Warm caramel &amp; carrots</string>
+    <string name="preset_8bit_snake_title">8-Bit Snake</string>
+    <string name="preset_8bit_snake_subtitle">Emerald pixels &amp; leaves</string>
+</resources>

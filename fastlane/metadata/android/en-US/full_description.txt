@@ -1,0 +1,7 @@
+SnowSplit is an offline-first, privacy-friendly expense and debt splitting app built with Jetpack Compose.
+
+Features:
+- Visual balance overview with interactive 2D physics bubbles
+- Net and gross debt calculation modes with local history
+- 100% offline-first storage with no ads or tracking
+- Dynamic seasonal, retro 8-bit, and live-animated themes

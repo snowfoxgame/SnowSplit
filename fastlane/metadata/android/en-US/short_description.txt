@@ -1,0 +1,1 @@
+Offline-first expense & debt splitter with interactive physics bubbles.

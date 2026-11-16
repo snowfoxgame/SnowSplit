@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Left/top subtle bubble -->
+    <path
+        android:fillColor="#EBF3FF"
+        android:fillAlpha="0.92"
+        android:pathData="M37,43m-13.5,0a13.5,13.5 0,1 1,27 0a13.5,13.5 0,1 1,-27 0" />
+
+    <!-- Right/bottom bubble -->
+    <path
+        android:fillColor="#B8D8FF"
+        android:fillAlpha="0.95"
+        android:pathData="M71,65m-13.5,0a13.5,13.5 0,1 1,27 0a13.5,13.5 0,1 1,-27 0" />
+
+    <!-- Dual side-by-side connection lines (green & red balance motif) -->
+    <path
+        android:pathData="M47,47 L63,57"
+        android:strokeColor="#66BB6A"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.2" />
+    <path
+        android:pathData="M45,51 L61,61"
+        android:strokeColor="#EF5350"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.2" />
+</vector>

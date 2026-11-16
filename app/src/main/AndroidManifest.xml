@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <queries>
+        <package android:name="com.snowdos.app" />
+    </queries>
+
+    <permission
+        android:name="com.snowapps.permission.THEME_SYNC"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.snowapps.permission.THEME_SYNC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".SnowSplitApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SnowSplit">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity-alias
+            android:name=".LauncherNormal"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherWinter"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_winter"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_winter_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherHalloween"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_halloween"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_halloween_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherChristmas"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_christmas"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_christmas_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherSummer"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_summer"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_summer_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherAutumn"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_autumn"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_autumn_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherSpring"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_spring"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_spring_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherEaster"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_easter"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_easter_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherNewYear"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_new_year"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_new_year_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherGaming"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_gaming"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_gaming_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherEightBit"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_eightbit"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_eightbit_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherInteractiveBubbles"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_interactive_bubbles"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_interactive_bubbles_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherMiniCity"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_mini_city"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_mini_city_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".LauncherWeatherTime"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_weather_time"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_weather_time_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- Required on Android < 13 for AppCompatDelegate.setApplicationLocales persistence -->
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
+        <provider
+            android:name=".platform.sync.ThemeSyncContentProvider"
+            android:authorities="${applicationId}.syncprovider"
+            android:exported="true"
+            android:permission="com.snowapps.permission.THEME_SYNC" />
+
+        <receiver
+            android:name=".platform.sync.ThemeSyncReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.snowapps.permission.THEME_SYNC">
+            <intent-filter>
+                <action android:name="com.snowapps.action.APPEARANCE_SYNC" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+SnowSplit ist eine datenschutzfreundliche Offline-First-App zum Aufteilen von Ausgaben und Schulden.
+
+Funktionen:
+- Visuelle Salden-Übersicht mit interaktiven 2D-Physik-Bubbles
+- Netto- und Brutto-Schuldenberechnung mit lokalem Verlauf
+- 100 % lokal & offline-first ohne Werbung oder Tracking
+- Dynamische Saison-, 8-Bit-Pixel- und Live-Themes
