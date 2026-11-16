@@ -1,5 +1,7 @@
 # SnowSplit
 
+![SnowSplit Feature Graphic](fastlane/metadata/android/en-US/images/featureGraphic.png)
+
 An offline-first, privacy-friendly Android expense & debt splitting app built with Jetpack Compose, interactive physics bubbles, and custom dynamic themes.
 
 ## About this project
