@@ -52,7 +52,7 @@ data class AppSettings(
     val currencyOption: CurrencyOption = CurrencyOption.AUTO,
     val appLanguage: AppLanguage = AppLanguage.DE,
     val tabTransitionMode: TabTransitionMode = TabTransitionMode.ANIMATED,
-    val accountTabVisibility: AccountTabVisibility = AccountTabVisibility.AUTO,
+    val accountTabVisibility: AccountTabVisibility = AccountTabVisibility.IN_SETTINGS,
     val syncAppIconWithTheme: Boolean = false,
     val crossAppSyncEnabled: Boolean = true,
     val partnerAppConnected: Boolean = false,

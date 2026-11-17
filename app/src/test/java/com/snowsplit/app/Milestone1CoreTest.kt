@@ -26,7 +26,10 @@ class Milestone1CoreTest {
     }
 
     @Test
-    fun `account tab auto visibility follows 380dp width and 1_15 fontScale threshold`() {
+    fun `account tab is hidden from bottom nav by default via IN_SETTINGS`() {
+        assertEquals(AccountTabVisibility.IN_SETTINGS, AppSettings().accountTabVisibility)
+        assertFalse(AppSettings().accountTabVisibility.isVisibleInNavBar(screenWidthDp = 800, fontScale = 1.0f))
+
         assertTrue(AccountTabVisibility.AUTO.isVisibleInNavBar(screenWidthDp = 412, fontScale = 1.0f))
         assertTrue(AccountTabVisibility.AUTO.isVisibleInNavBar(screenWidthDp = 380, fontScale = 1.15f))
         assertFalse(AccountTabVisibility.AUTO.isVisibleInNavBar(screenWidthDp = 379, fontScale = 1.0f))

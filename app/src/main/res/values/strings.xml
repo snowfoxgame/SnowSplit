@@ -92,15 +92,15 @@
 
     <!-- Account Tab -->
     <string name="account_title">Account &amp; Sync</string>
-    <string name="account_coming_soon_badge">Coming soon</string>
-    <string name="account_coming_soon_title">Offline-first today, cloud sync later</string>
-    <string name="account_coming_soon_body">SnowSplit works completely without an account. Optional encrypted sync across friends and devices is prepared behind modular Auth &amp; Sync repositories.</string>
-    <string name="account_row_subtitle">Offline-first · Coming soon</string>
+    <string name="account_coming_soon_badge">Offline-First</string>
+    <string name="account_coming_soon_title">All data stored locally on your device</string>
+    <string name="account_coming_soon_body">SnowSplit works completely offline-first without requiring an account. All debts, contacts, photos, and themes stay private on your device.</string>
+    <string name="account_row_subtitle">Offline-First · All data stored locally on your device</string>
     <string name="account_status_local_only">Local-only</string>
     <string name="account_pillar_storage_title">Offline Room storage</string>
     <string name="account_pillar_storage_desc">All bubbles, photos, and debt entries remain stored locally on your device.</string>
     <string name="account_pillar_sync_title">Sync status</string>
-    <string name="account_pillar_sync_never">Not connected · Planned via AuthRepository &amp; SyncRepository</string>
+    <string name="account_pillar_sync_never">Local-only · No cloud connection required</string>
     <string name="account_pillar_sync_last">Last synced: %1$s</string>
 
     <!-- Settings Screen Sections & Rows -->

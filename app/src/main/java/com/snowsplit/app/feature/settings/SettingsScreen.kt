@@ -67,12 +67,10 @@ import com.snowsplit.app.core.designsystem.components.SnowGlassCard
 import com.snowsplit.app.core.designsystem.components.snowPressFeedback
 import com.snowsplit.app.core.designsystem.titleRes
 import com.snowsplit.app.core.ui.MeProfileEditorDialog
-import com.snowsplit.app.domain.model.AccountTabVisibility
 import com.snowsplit.app.domain.model.AppLanguage
 import com.snowsplit.app.domain.model.CurrencyOption
 import com.snowsplit.app.domain.model.DebtCalculationMode
 import com.snowsplit.app.domain.model.TabTransitionMode
-import com.snowsplit.app.domain.model.ThemeMode
 
 private enum class SettingsDialogType {
     CALCULATION_MODE,
@@ -80,7 +78,6 @@ private enum class SettingsDialogType {
     MY_PROFILE,
     LANGUAGE,
     TAB_TRANSITION,
-    ACCOUNT_TAB_VISIBILITY,
     HELP,
     ABOUT
 }
@@ -129,12 +126,6 @@ fun SettingsScreen(
     val tabTransitionStatus = when (settings.tabTransitionMode) {
         TabTransitionMode.ANIMATED -> stringResource(R.string.settings_tab_transition_animated_status)
         TabTransitionMode.INSTANT -> stringResource(R.string.settings_tab_transition_instant_status)
-    }
-
-    val accountVisibilityStatus = when (settings.accountTabVisibility) {
-        AccountTabVisibility.AUTO -> stringResource(R.string.settings_account_auto)
-        AccountTabVisibility.ALWAYS -> stringResource(R.string.settings_account_always)
-        AccountTabVisibility.IN_SETTINGS -> stringResource(R.string.settings_account_in_settings)
     }
 
     LazyColumn(
@@ -300,15 +291,6 @@ fun SettingsScreen(
                 },
                 checked = settings.syncAppIconWithTheme,
                 onCheckedChange = viewModel::setSyncAppIconWithTheme
-            )
-        }
-
-        item(key = "row_account_tab_visibility", contentType = "action") {
-            SettingsActionRow(
-                icon = Icons.Outlined.AccountCircle,
-                title = stringResource(R.string.settings_account_tab_row),
-                subtitle = accountVisibilityStatus,
-                onClick = { activeDialog = SettingsDialogType.ACCOUNT_TAB_VISIBILITY }
             )
         }
 
@@ -514,54 +496,6 @@ fun SettingsScreen(
                 selected = settings.tabTransitionMode == TabTransitionMode.INSTANT,
                 onClick = {
                     viewModel.setTabTransitionMode(TabTransitionMode.INSTANT)
-                    activeDialog = null
-                }
-            )
-            DialogCloseRow(onClose = { activeDialog = null })
-        }
-    }
-
-    // Dialog 5: Account Tab Visibility
-    SnowFrostedDialog(
-        visible = activeDialog == SettingsDialogType.ACCOUNT_TAB_VISIBILITY,
-        onDismissRequest = { activeDialog = null }
-    ) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(tokens.spacing.lg),
-            verticalArrangement = Arrangement.spacedBy(tokens.spacing.sm)
-        ) {
-            Text(
-                text = stringResource(R.string.settings_account_tab_row),
-                style = MaterialTheme.typography.titleLarge,
-                fontWeight = FontWeight.SemiBold
-            )
-            Spacer(modifier = Modifier.height(2.dp))
-            DialogRadioOption(
-                title = stringResource(R.string.settings_account_auto),
-                description = stringResource(R.string.settings_account_auto_desc),
-                selected = settings.accountTabVisibility == AccountTabVisibility.AUTO,
-                onClick = {
-                    viewModel.setAccountTabVisibility(AccountTabVisibility.AUTO)
-                    activeDialog = null
-                }
-            )
-            DialogRadioOption(
-                title = stringResource(R.string.settings_account_always),
-                description = stringResource(R.string.settings_account_always_desc),
-                selected = settings.accountTabVisibility == AccountTabVisibility.ALWAYS,
-                onClick = {
-                    viewModel.setAccountTabVisibility(AccountTabVisibility.ALWAYS)
-                    activeDialog = null
-                }
-            )
-            DialogRadioOption(
-                title = stringResource(R.string.settings_account_in_settings),
-                description = stringResource(R.string.settings_account_in_settings_desc),
-                selected = settings.accountTabVisibility == AccountTabVisibility.IN_SETTINGS,
-                onClick = {
-                    viewModel.setAccountTabVisibility(AccountTabVisibility.IN_SETTINGS)
                     activeDialog = null
                 }
             )

@@ -92,26 +92,9 @@ fun MainShellScreen(
     onToggleCalculationMode: (DebtCalculationMode) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val configuration = LocalConfiguration.current
     val density = LocalDensity.current
-    val showAccountTab = remember(
-        settings.accountTabVisibility,
-        configuration.screenWidthDp,
-        density.fontScale
-    ) {
-        settings.accountTabVisibility.isVisibleInNavBar(
-            screenWidthDp = configuration.screenWidthDp,
-            fontScale = density.fontScale
-        )
-    }
-
-    val destinations = remember(showAccountTab) {
-        buildList {
-            add(AppTab.ENTRIES)
-            add(AppTab.BUBBLES)
-            if (showAccountTab) add(AppTab.ACCOUNT)
-            add(AppTab.SETTINGS)
-        }
+    val destinations = remember {
+        listOf(AppTab.ENTRIES, AppTab.BUBBLES, AppTab.SETTINGS)
     }
 
     val initialBubblesIndex = remember { destinations.indexOf(AppTab.BUBBLES).coerceAtLeast(0) }

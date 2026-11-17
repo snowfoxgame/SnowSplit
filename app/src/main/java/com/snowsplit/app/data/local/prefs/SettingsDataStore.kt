@@ -350,7 +350,7 @@ class SettingsDataStore @Inject constructor(
         currencyOption = prefs[Keys.CURRENCY_OPTION].toEnumOrDefault(CurrencyOption.AUTO),
         appLanguage = AppLanguage.fromStoredValue(prefs[Keys.APP_LANGUAGE]),
         tabTransitionMode = prefs[Keys.TAB_TRANSITION_MODE].toEnumOrDefault(TabTransitionMode.ANIMATED),
-        accountTabVisibility = prefs[Keys.ACCOUNT_TAB_VISIBILITY].toEnumOrDefault(AccountTabVisibility.AUTO),
+        accountTabVisibility = AccountTabVisibility.IN_SETTINGS,
         syncAppIconWithTheme = prefs[Keys.SYNC_APP_ICON_WITH_THEME] ?: false,
         crossAppSyncEnabled = prefs[Keys.CROSS_APP_SYNC_ENABLED] ?: true,
         partnerAppConnected = prefs[Keys.PARTNER_APP_CONNECTED] ?: false,
